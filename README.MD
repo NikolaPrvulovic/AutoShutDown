@@ -17,7 +17,6 @@ This application allows you to:
 
 ## Installation
 1. **Download the Application**:
-    - [Download AutoShutdown.zip](#) *(Insert link to the zip file here if hosting online, or use local path if distributing manually)*
-
+    - [Download AutoShutDown](https://github.com/NikolaPrvulovic/AutoShutDown/releases/tag/autoshutdown) 
 2. **How to Run**:
     - Just use the installer. Inside it is JRE folder so the application will work without any other need for Java.
