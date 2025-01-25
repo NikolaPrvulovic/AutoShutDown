@@ -154,20 +154,20 @@ public class Main {
                 counterLabel.setText(ddHour + ":" + ddMinute + ":" + ddSecond);
 
 
-                if (second == -1) {
+                if (second < 0) {
                     second = 59;
                     minute--;
-                    if (minute == 0 && hour != 0) {
+
+                    if (minute < 0) {
                         minute = 59;
+                        hour--;
+
+                        if (hour < 0) {
+                            hour = 0;
+                            minute = 0;
+                            second = 0;
+                        }
                     }
-                    hour--;
-                }
-
-
-                if (hour == 1 && minute == 0 && second == 0) {
-                    hour = 0;
-                    minute = 59;
-                    second = 59;
                 }
 
                 ddSecond = decimalFormat.format(second);
